@@ -1,9 +1,14 @@
+import { TemaProvider } from "./context/TemaContext"
+import { Home } from "./pages/Home"
 
 function App() {
   
 
   return (
-    <div className="p-5 text-4xl bg-red-300">Olá Mundo</div>
+    <TemaProvider> 
+       <Home/>
+
+     </TemaProvider> 
   )
 }
 
